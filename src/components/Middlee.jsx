@@ -8,16 +8,16 @@ const Middlee = () => {
       <img src={Asos} alt="asos pic" className="object-cover h-full w-full md:block lg:block sm:hidden hidden" />
       <img src={Aso} alt="asos pic" className="object-cover h-full w-full lg:hidden md:hidden sm:block block" />
       <div className="absolute inset-0 flex flex-col justify-center items-center">
-        <p className="text-black font-bold text-center p-4 bg-white text-6xl tracking-wide">
+        <p className="text-black font-bold text-center p-4 bg-white lg:text-5xl tracking-wide sm:text-5xl text-4xl">
           This is ASOS
         </p>
-        <p className="bg-white text-2xl font-light tracking-wide">
+        <p className="bg-white sm:text-3xl text-xl font-light lg:text:4xl tracking-wide">
           ASOS DESIGN and 850+ brands
         </p>
         <div className="flex bg-white uppercase font-bold h-[3rem] pt-2">
-          <button className="mr-2">Shop Women</button>
-          <div className="w-6"></div>
-          <button className="ml-2">Shop Men</button>
+          <button className="mr-2 hidden md:block">Shop Women</button>
+          <div className="w-6  bg-transparent hidden "></div>
+          <button className="ml-2 hidden md:block" >Shop Men</button>
         </div>
       </div>
     </div>

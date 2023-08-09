@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { AiOutlineSearch, AiOutlineHeart, AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { BsPerson } from 'react-icons/bs';
 import { BsBag } from 'react-icons/bs';
+import Nigeria from '../assets/flag.jpeg';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -11,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex justify-between items-center h-[4rem] bg-[#2d2d2d] relative">
+    <nav className="relative flex justify-between items-center h-[4rem] bg-[#2d2d2d]">
       {/* Left side */}
       <div className="flex items-center space-x-4">
         <div className="h-[4rem] text-white font-bold text-4xl py-2 pl-7 pr-6 tracking-tighter">
@@ -42,7 +43,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile navigation */}
-      <div className={nav ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-white ease-in-out duration-500 overflow-y-auto' : 'fixed left-[-100%]'}>
+      <div className={nav ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-white ease-in-out duration-500 overflow-y-auto z-50' : 'fixed left-[-100%]'}>
 
         <div className="flex items-center">
           <div onClick={handleNav} className="block md:hidden">
@@ -146,10 +147,11 @@ const Navbar = () => {
          </li>
 
         </ul>
+
+       
       </div>
     </nav>
   );
 }
 
 export default Navbar;
-
