@@ -31,7 +31,7 @@ const Navbar = () => {
           placeholder="Search for items and brands"
           className="border border-gray-400 rounded-full py-2 px-4 w-full tracking-tight pr-10 hidden lg:flex"
         />
-        <AiOutlineSearch className="absolute right-4 top-1/2 transform -translate-y-1/2 text-black font-bold sm:text-white md:text-white lg:text-black" size={30} />
+        <AiOutlineSearch className="absolute right-4 top-1/2 transform -translate-y-1/2 text-black font-bold sm:text-white md:text-white lg:text-black search-icon" size={30} />
       </div>
 
       {/* Right side */}
