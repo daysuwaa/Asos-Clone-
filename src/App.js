@@ -2,7 +2,9 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Nav from './components/Nav';
 import Section from './components/Section';
-import Middlee from './components/Middlee'
+import Section2 from './components/Section2';
+import Middlee from './components/Middlee';
+
 function App() {
   return (
   <>
@@ -10,8 +12,7 @@ function App() {
 <br></br>
   <Navbar/>
   <Section/>
-  <br></br>
-  <br></br>
+  <Section2/>
   <Middlee/>
   </>
     

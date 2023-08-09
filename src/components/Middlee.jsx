@@ -1,10 +1,12 @@
 import React from 'react';
 import Asos from '../assets/asos.avif';
+import Aso from '../assets/asos2.avif';
 
 const Middlee = () => {
   return (
     <div className="relative h-screen">
-      <img src={Asos} alt="asos pic" className="object-cover h-full w-full" />
+      <img src={Asos} alt="asos pic" className="object-cover h-full w-full md:block lg:block sm:hidden hidden" />
+      <img src={Aso} alt="asos pic" className="object-cover h-full w-full lg:hidden md:hidden sm:block block" />
       <div className="absolute inset-0 flex flex-col justify-center items-center">
         <p className="text-black font-bold text-center p-4 bg-white text-6xl tracking-wide">
           This is ASOS
