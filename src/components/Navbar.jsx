@@ -122,7 +122,7 @@ const Navbar = () => {
          </li>
          <br></br>
 
-         <li className='bg-black  text-white lg:text-5xl md:text-5xl sm:text-5xl w-full h-[6rem] pt-2 pl-2 tracking-widest text-4xl'>
+         <li className='bg-black  text-white lg:text-5xl md:text-5xl sm:text-4xl w-full h-[6rem] pt-2 pl-2 tracking-widest text-3xl'>
          <h1>Topshop</h1>
          </li>
          <br></br>
