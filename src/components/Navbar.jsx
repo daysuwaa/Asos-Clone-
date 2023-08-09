@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import { AiOutlineSearch, AiOutlineHeart, AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { BsPerson } from 'react-icons/bs';
 import { BsBag } from 'react-icons/bs';
-import Nigeria from '../assets/flag.jpeg';
+import { useMediaQuery } from 'react-responsive'; 
+
 
 const Navbar = () => {
+  const isXsScreen = useMediaQuery({ maxWidth: 767 }); 
   const [nav, setNav] = useState(false);
 
   const handleNav = () => {
@@ -32,7 +34,7 @@ const Navbar = () => {
           placeholder="Search for items and brands"
           className="border border-gray-400 rounded-full py-2 px-4 w-full tracking-tight pr-10 hidden lg:flex"
         />
-        <AiOutlineSearch className="absolute right-4 top-1/2 transform -translate-y-1/2 text-black font-bold sm:text-white md:text-white lg:text-black search-icon" size={30} />
+        <AiOutlineSearch className="absolute right-4 top-1/2 transform -translate-y-1/2 font-bold sm:text-white md:text-white lg:text-black text-white pr-3" size={30} />
       </div>
 
       {/* Right side */}
@@ -45,10 +47,12 @@ const Navbar = () => {
       {/* Mobile navigation */}
       <div className={nav ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-white ease-in-out duration-500 overflow-y-auto z-50' : 'fixed left-[-100%]'}>
 
-        <div className="flex items-center">
-          <div onClick={handleNav} className="block md:hidden">
-            {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
-          </div>
+      <div className="flex items-center">
+          {isXsScreen && ( // Show close icon only on XS screens
+            <div onClick={handleNav} className="block md:hidden">
+              {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
+            </div>
+          )}
         </div>
         <ul className='uppercase p-4  font-bold'>
          <li>
@@ -118,7 +122,7 @@ const Navbar = () => {
          </li>
          <br></br>
 
-         <li className='bg-black  text-white text-5xl w-full h-[6rem] pt-2 pl-2 tracking-widest'>
+         <li className='bg-black  text-white text-5xl w-full h-[6rem] pt-2 pl-2 tracking-widest text-3xl'>
          <h1>Topshop</h1>
          </li>
          <br></br>
