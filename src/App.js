@@ -5,6 +5,11 @@ import Section from './components/Section';
 import Section2 from './components/Section2';
 import Middlee from './components/Middlee';
 import Icons from './components/Icons';
+import Footer from './components/Footer';
+import Copy from './components/Copy';
+
+
+
 
 function App() {
   return (
@@ -16,6 +21,8 @@ function App() {
   <Section2/>
   <Middlee/>
   <Icons/>
+  <Footer/>
+  <Copy/>
   </>
     
   );
