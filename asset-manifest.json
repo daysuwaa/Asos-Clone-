@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Asos-Clone-/static/css/main.7c180776.css",
-    "main.js": "/Asos-Clone-/static/js/main.19614300.js",
+    "main.css": "/Asos-Clone-/static/css/main.80dca1f7.css",
+    "main.js": "/Asos-Clone-/static/js/main.6a071532.js",
     "static/media/asos.avif": "/Asos-Clone-/static/media/asos.2dcac4c8268d6df66ffc.avif",
     "static/media/asos2.avif": "/Asos-Clone-/static/media/asos2.73afe9ac9242b46d438d.avif",
     "static/media/american.jpeg": "/Asos-Clone-/static/media/american.b9f2a0688f20081c6e3c.jpeg",
@@ -9,11 +9,11 @@
     "static/media/snapchat.png": "/Asos-Clone-/static/media/snapchat.8add587f29ce0e3f4593.png",
     "static/media/Visa-Logo.png": "/Asos-Clone-/static/media/Visa-Logo.12dbf0a959678330d038.png",
     "index.html": "/Asos-Clone-/index.html",
-    "main.7c180776.css.map": "/Asos-Clone-/static/css/main.7c180776.css.map",
-    "main.19614300.js.map": "/Asos-Clone-/static/js/main.19614300.js.map"
+    "main.80dca1f7.css.map": "/Asos-Clone-/static/css/main.80dca1f7.css.map",
+    "main.6a071532.js.map": "/Asos-Clone-/static/js/main.6a071532.js.map"
   },
   "entrypoints": [
-    "static/css/main.7c180776.css",
-    "static/js/main.19614300.js"
+    "static/css/main.80dca1f7.css",
+    "static/js/main.6a071532.js"
   ]
 }
