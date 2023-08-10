@@ -1,8 +1,8 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Nav from './components/Nav';
+import Pink from './components/Pink';
 import Section from './components/Section';
-import Section2 from './components/Section2';
 import Middlee from './components/Middlee';
 import Icons from './components/Icons';
 import Footer from './components/Footer';
@@ -17,8 +17,8 @@ function App() {
   <Nav/>
 <br></br>
   <Navbar/>
+  <Pink/>
   <Section/>
-  <Section2/>
   <Middlee/>
   <Icons/>
   <Footer/>

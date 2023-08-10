@@ -19,7 +19,7 @@ const Navbar = () => {
       <div className="flex items-center space-x-4">
         <div className="h-[4rem] text-white font-bold text-4xl py-2 pl-7 pr-6 tracking-tighter">
           <div onClick={handleNav} className='block md:hidden'>
-            {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={40} className='pt-3' />}
+            { <AiOutlineMenu size={35} className='pt-3' />}
           </div>
         </div>
         <div className="h-[4rem] text-white font-bold text-4xl py-2 pl-6 pr-4 tracking-tighter">asos</div>
@@ -34,23 +34,23 @@ const Navbar = () => {
           placeholder="Search for items and brands"
           className="border border-gray-400 rounded-full py-2 px-4 w-full tracking-tight pr-10 hidden lg:flex"
         />
-        <AiOutlineSearch className="absolute right-4 top-1/2 transform -translate-y-1/2 font-bold sm:text-white  md:text-white lg:text-black text-white -mr-4" size={30} />
+        <AiOutlineSearch className="absolute right-4 top-1/2 transform -translate-y-1/2 font-bold sm:text-white  md:text-white lg:text-black text-white -mr-3" size={25} />
       </div>
 
       {/* Right side */}
       <div className="flex items-center space-x-3 px-4">
-        <BsPerson className="text-white font-bold" size={30} />
-        <AiOutlineHeart className="text-white font-bold" size={30} />
-        <BsBag className="text-white font-bold" size={30} />
+        <BsPerson className="text-white font-bold " size={25} />
+        <AiOutlineHeart className="text-white font-bold" size={25} />
+        <BsBag className="text-white font-bold" size={25} />
       </div>
 
       {/* Mobile navigation */}
       <div className={nav ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-white ease-in-out duration-500 overflow-y-auto z-50' : 'fixed left-[-100%]'}>
 
       <div className="flex items-center">
-          {isXsScreen && ( // Show close icon only on XS screens
+          {isXsScreen &&  ( // Show close icon only on XS screens
             <div onClick={handleNav} className="block md:hidden">
-              {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
+              {nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
             </div>
           )}
         </div>
@@ -122,7 +122,7 @@ const Navbar = () => {
          </li>
          <br></br>
 
-         <li className='bg-black  text-white lg:text-5xl md:text-5xl sm:text-4xl w-full h-[6rem] pt-2 pl-2 tracking-widest text-3xl'>
+         <li className='bg-black  text-white lg:text-5xl md:text-5xl sm:text-4xl w-full h-[6rem] pt-2 pl-2 tracking-widest text-2xl'>
          <h1>Topshop</h1>
          </li>
          <br></br>
