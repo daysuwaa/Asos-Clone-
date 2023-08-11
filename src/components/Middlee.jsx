@@ -15,12 +15,12 @@ const Middlee = () => {
           ASOS DESIGN and 850+ brands
         </p>
         <br></br>
-        <div className="flex bg-white uppercase font-bold h-[3rem] pt-2">
-          <button className="mr-2 hidden md:block">Shop Women</button>
-          {/* <div className="w-6  bg-transparent hidden "></div> */}
-          <button className="ml-5 hidden md:block" >Shop Men</button>
-        </div>
-      </div>
+
+         <div className="grid md:grid-cols-2 gap-4 sm:grid-cols-1  h-[3rem] pt-2 uppercase  ">
+          <button className="md:block bg-white font-bold tracking-wider uppercase h-[2.5rem] w-[12rem] ">Shop Women</button>
+          <button className="md:block bg-white font-bold tracking-wider uppercase h-[2.5rem] w-[12rem]" >Shop Men</button>
+         </div>
+     </div>
     </div>
   );
 };
