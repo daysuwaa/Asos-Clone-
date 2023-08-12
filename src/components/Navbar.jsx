@@ -22,7 +22,7 @@ const Navbar = () => {
             { <AiOutlineMenu size={35} className='pt-3' />}
           </div>
         </div>
-        <div className="h-[4rem] text-white font-bold text-4xl py-2 pl-6 pr-4 tracking-tighter sm:pl-0">asos</div>
+        <div className="h-[4rem] text-white font-bold text-4xl py-2  tracking-tighter ">asos</div>
         <a href="/" className="text-white hidden lg:flex font-bold border-r h-[4rem] py-5 border-[#6c757d] tracking-wider pl-4 pr-7 text-sm">WOMEN</a>
         <a href="/" className="h-[4rem] hidden lg:flex text-white font-bold border-r py-5 tracking-wider border-[#6c757d] pl-5 pr-8 text-sm">MEN</a>
       </div>
